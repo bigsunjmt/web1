@@ -4,19 +4,63 @@
 <head>
   <title>Home page</title>
   <meta charset="utf-8">
+  <style>
+  body{
+    margin: 0;
+  }
+    a{
+      color:green;
+      text-decoration: none;
+    }
+    h1{
+      font-size: 45px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 20px;
+    }
+    ol{
+      border-right: 1px solid gray;
+      width: 100px;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left: 33px;
+    }
+    #grid #article{
+      padding-left: 25px;
+    }
+    @media(max-width:800px){
+      #grid{
+        display: block;
+      }
+      ol{
+        border-right: none;
+    }
+    h1{
+      border-bottom: none;
+    }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
+  <h1><a href="index.html" style="color:black;text-decoration:underline">WEB</a></h1>
+  <div id="grid">
   <ol>
     <li><a href="2.hmtl">유지원</a></li>
     <li><a href="https://www.hallym.ac.kr/hallym_univ/sub01/cP2/sCP5.html"target="_blank">러시아학과</a></li>
     <li><a href="https://sites.google.com/view/dah-hallym"target="_blank">디지털인문예술</a></li>
   </ol>
-  <h2>유지원</h2>
-  <p>
-    안녕하세요 <strong>한림대학교 20학번 유지원</strong>입니다!
-    <br>저는 주전공 러시아학과, 복수전공 디지털인문예술을 하고 있습니다.
-  </p>
+  <div id="article">
+   <h2>유지원</h2>
+   <p>
+     안녕하세요 <strong>한림대학교 20학번 유지원</strong>입니다!
+     <br>저는 주전공 러시아학과, 복수전공 디지털인문예술을 하고 있습니다.
+   </p>
 <p><strong><u>러시아학과</u></strong>는 유튜브에서 시베리아 횡단열차타는 한 유튜버의 영상을 보고
   '나도 러시아어 배워보고 싶다'고 생각하여 충동적으로 결정하게 되었습니다!ㅎㅎ</p>
   <br>▼아래의 영상은 제가 보았었던 유튜브 영상중 하나입니다
@@ -29,5 +73,7 @@
 <br><h3>짧지만 글 읽어주셔서 감사합니다ㅎㅎ</h3>
 <br>
 <img src="flower.jpg" width="600">
+ </div>
+</div>
 </body>
 </html>
